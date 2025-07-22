@@ -1,0 +1,144 @@
+# XScanner Configuration File
+# Copy this to config/settings.yaml and update with your API keys
+
+# Twitter Scraping Settings
+twitter:
+  # Hashtags to monitor
+  hashtags:
+    - "#airdrop"
+    - "#launch"
+    - "#raising"
+    - "#seed"
+    - "#preseed"
+    - "#funding"
+    - "#Series A"
+    - "#tokenomics"
+    - "#DeFi"
+    - "#Web3"
+    - "#crypto"
+    - "#blockchain"
+  
+  # X API v2 settings (optional - uses snscrape if not provided)
+  api_key: "your_x_api_key_here"
+  api_secret: "your_x_api_secret_here"
+  bearer_token: "your_bearer_token_here"
+  
+  # Scraping limits
+  max_tweets: 200
+  days_back: 1
+  
+  # Rate limiting
+  requests_per_hour: 100
+  batch_delay: 2  # seconds between batches
+
+# Grok AI Settings
+grok:
+  api_key: "your_grok_api_key_here"
+  model: "grok-beta"
+  base_url: "https://api.x.ai/v1"
+  
+  # Classification settings
+  temperature: 0.1
+  max_tokens: 1000
+  confidence_threshold: 0.6
+  
+  # Rate limiting for Grok API
+  requests_per_minute: 50
+  batch_size: 10
+
+# Data Storage Settings  
+storage:
+  csv_path: "data/results"
+  batch_size: 50
+  
+  # File retention
+  keep_files_days: 30
+  auto_cleanup: true
+  
+  # Export formats
+  export_formats: ["csv", "json"]
+  
+  # Future integrations
+  mongodb:
+    enabled: false
+    connection_string: "mongodb://localhost:27017"
+    database: "xscanner"
+    collection: "opportunities"
+  
+  notion:
+    enabled: false
+    api_key: "your_notion_api_key"
+    database_id: "your_notion_database_id"
+  
+  telegram:
+    enabled: false
+    bot_token: "your_telegram_bot_token"
+    chat_id: "your_chat_id"
+
+# Filtering and Quality Control
+filtering:
+  # Minimum engagement threshold
+  min_engagement: 10
+  min_followers: 1000
+  
+  # Quality filters
+  exclude_retweets: true
+  exclude_replies: true
+  min_confidence: 0.5
+  
+  # Spam detection
+  max_hashtags: 10
+  min_text_length: 50
+  
+  # Duplicate detection
+  similarity_threshold: 0.85
+  dedup_window_hours: 24
+
+# Scheduling
+scheduling:
+  # Continuous scan settings
+  scan_interval_hours: 6
+  max_scans_per_day: 4
+  
+  # Peak hours (when to scan more frequently)
+  peak_hours: [9, 12, 15, 18]  # UTC hours
+  off_peak_multiplier: 2  # scan every N intervals during off-peak
+
+# Analytics and Reporting
+analytics:
+  generate_reports: true
+  report_frequency: "daily"  # daily, weekly, monthly
+  
+  # Metrics to track
+  track_metrics:
+    - "opportunity_count"
+    - "chain_distribution" 
+    - "category_trends"
+    - "engagement_patterns"
+    - "confidence_scores"
+  
+  # Alerts
+  alerts:
+    high_confidence_threshold: 0.9
+    high_engagement_threshold: 1000
+    funding_amount_threshold: "1M"
+
+# Logging (optional)
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "logs/xscanner.log"
+  max_file_size: "10MB"
+  backup_count: 5
+
+# Performance
+performance:
+  # Async settings
+  max_concurrent_requests: 20
+  timeout_seconds: 30
+  
+  # Memory management
+  max_tweets_in_memory: 5000
+  clear_cache_hours: 24
+  
+  # CPU usage
+  max_cpu_percent: 80

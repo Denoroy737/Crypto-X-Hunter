@@ -1,0 +1,99 @@
+# Crypto Influencers and VCs to Monitor
+# Add Twitter usernames (without @) - one per line
+
+# Top Crypto VCs
+a16z
+paradigm
+multicoin
+binancelabs
+coinbaseventures
+polychain
+panteracapital
+dragonfly_cap
+1confirmation
+placeholder
+electriccapital
+galaxydigital
+dcg
+frameworkvc
+
+# Crypto Influencers
+elonmusk
+VitalikButerin
+balajis
+APompliano
+naval
+cz_binance
+justinsuntron
+erikvorhees
+bgarlinghouse
+stani
+haydenzadams
+ryaneshea
+dankrad
+aeyakovenko
+matthuang
+ljin18
+cdixon
+fredwilson
+twobitidiot
+ercwl
+techbro
+crypto_rand
+delphi_digital
+defiminty
+thedefiedge
+
+# Project Founders
+vitalikbuterin
+danielesesta
+0xMaki
+AntonioMJuliano
+cz_binance
+justinsuntron
+alexgluchowski
+sandeepnailwal
+mikedemarais
+thegostep
+
+# Airdrop Hunters
+coin98_wallet
+trustwalletapp
+metamask
+defipulse
+yearnfi
+compoundfinance
+synthetix_io
+MakerDAO
+UniswapProtocol
+0xProject
+
+# News and Analysis
+Cointelegraph
+CoinDesk
+TheBlock__
+DeFiPulse
+messaricrypto
+glassnode
+santimentfeed
+coingecko
+nansen_ai
+
+# Layer 2 Projects
+arbitrum
+optimismFND
+0xPolygon
+StarkWareLtd
+aztecnetwork
+loopringorg
+hermeznetwork
+
+# DeFi Projects
+AaveAave
+compoundfinance
+dydxprotocol
+SushiSwap
+PancakeSwap
+terra_money
+AlphaFinanceLab
+ConvexFinance

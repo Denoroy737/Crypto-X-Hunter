@@ -1,4 +1,4 @@
-# 🎯 XScanner - AI-Powered Crypto Opportunity Discovery
+# 🎯 Crypto-X-Hunter - AI-Powered Crypto Opportunity Discovery
 
 **Discover airdrops and early crypto startups before they go viral** using advanced AI semantic analysis powered by Grok API.
 
